@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.top_container {
+    background: aqua;
+    height: 250px;
+}
+
+.title_container {
+    background: pink;
+    height: 100px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 60px;
+}
+
+.add_container {
+    background-color: powderblue;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    font-size: 30px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input_modal_container {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    bottom: auto;
+    left: 42%;
+}
+
+
+.input_modal {
+    background: red;
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.bottom_container {
+    /* background-color: gray; */
+    height: 700px;
+    display: flex;
+    gap: 5px;
+}
+
+.books_container {
+    background: chocolate;
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    /* padding-top: 50px; */
+    gap: 20px;
+    position: relative;
+    
+
+}
+
+/* #books {
+    background: blue;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+} */
+
+.remove {
+    font-size: 30px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+
+}
+
+
+
+
+
+
