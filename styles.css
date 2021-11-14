@@ -1,19 +1,41 @@
 * {
     box-sizing: border-box;
+    
 }
 
 body {
     padding: 0;
     margin: 0;
+    background: #1F2833;
 }
 
 .top_container {
-    background: aqua;
     height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .title_container {
-    background: pink;
+    
+    background-color: #66FCF1;
+    height: 100px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 80px;
+    border: solid;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+
+.add_container {
+    background-color: #66FCF1;
     height: 100px;
     width: 300px;
     display: flex;
@@ -21,69 +43,95 @@ body {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    font-size: 60px;
-}
-
-.add_container {
-    background-color: powderblue;
-    height: 100px;
-    width: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
+    border: solid;
+    border-radius: 10px;
 }
 
 button {
+    background: #9dadac;
     font-size: 30px;
     width: 150px;
     margin-left: auto;
     margin-right: auto;
+    border: solid;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: gray;
 }
 
 .input_modal_container {
+    background: #66FCF1;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
     display: none;
     z-index: 1;
     position: absolute;
     bottom: auto;
-    left: 42%;
+    left: 37%;
+    border: solid;
+    border-radius: 10px;
 }
 
 
-.input_modal {
-    background: red;
+.input_container {
+    margin: 40px 3px;
+    background: #66FCF1;
     height: 200px;
-    width: 300px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+}
+
+input {
+    font-size: 30px;
+    border-color: black;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+.button_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+
 
 }
 
+
 .bottom_container {
-    /* background-color: gray; */
     height: 700px;
     display: flex;
     gap: 5px;
 }
 
 .books_container {
-    background: chocolate;
+    background: #66FCF1;
     height: 200px;
     width: 200px;
     display: flex;
     flex-direction: column;
     font-size: 20px;
     text-align: center;
-    /* padding-top: 50px; */
+    padding-top: 50px;
     gap: 20px;
     position: relative;
-    
-
+    border: solid;
+    border-radius: 10px;
 }
 
-/* #books {
+
+        /* Test Book */
+ /* #books { 
     background: blue;
     height: 200px;
     width: 200px;
@@ -92,7 +140,7 @@ button {
     font-size: 20px;
     display: flex;
     flex-direction: column;
-} */
+}  */
 
 .remove {
     font-size: 30px;
@@ -102,7 +150,7 @@ button {
     position: absolute;
     bottom: 0;
     left: 20px;
-
+    margin-bottom: 5px;
 }
 
 

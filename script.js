@@ -10,7 +10,7 @@ const removeBtn = document.querySelector('.remove');
 
 let newBook;
 let myLibrary = []
-let thisBook
+
 
 
 addBtn.addEventListener('click', () => {
@@ -21,16 +21,14 @@ addBtn.addEventListener('click', () => {
 
 
 submitBtn.addEventListener('click', () => {
-    inputModalContainer.style.display = 'none';
+    if(title.value == '', author.value == '', pages.value == ''){
+        inputModalContainer.style.display = 'none';
+    } else {
     createBook();
-    render();
+    render()
     myLibrary.splice(0, 3);
-    
+    }  
 })
-
-
-
-
 
 
 closeBtn.addEventListener('click', () => {
@@ -43,20 +41,18 @@ closeBtn.addEventListener('click', () => {
 
 
 
+
 class Book {
     constructor(title, author, pages) {
         this.title = title.value;
         this.author = author.value;
         this.pages = pages.value;
-        // this.info = function () {
-        //     return `${title}, ${author}, ${pages}`;
-        // };
     }
 }
 
 
 function addBookToLibrary() {
-    thisBook = new Book(title, author, pages);
+    let thisBook = new Book(title, author, pages);
     myLibrary.push(thisBook.title, thisBook.author, thisBook.pages);
     myLibrary.forEach(val => {
         newBook.innerHTML += val + "<br>";
@@ -67,8 +63,6 @@ function addBookToLibrary() {
 
 
 function createBook() {
-    thisBook = new Book(title, author, pages);
-    myLibrary.push()
     
     let insertBtn;
     newBook = document.createElement('div')  
@@ -81,21 +75,21 @@ function createBook() {
     insertBtn.appendChild(text);
     insertBtn.setAttribute('class', 'remove')
     newBook.appendChild(insertBtn);
-
     bottomContainer.appendChild(newBook);
-        insertBtn.addEventListener('click', (target) => {
-        newBook.remove(target);
-     })
 
-
-
+    insertBtn.addEventListener('click', (e) => {
+        e.target.parentNode.remove();
+    })
 }
+
+
 function render() {
     title.value = '';
     author.value = '';
     pages.value = '';
-
+    inputModalContainer.style.display = 'none'
 }
+
 
 removeBtn.addEventListener('click', () => {
     bottomContainer.remove(bottomContainer.lastChild);    
