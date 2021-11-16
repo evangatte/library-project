@@ -24,6 +24,7 @@ addBtn.addEventListener('click', () => {
 submitBtn.addEventListener('click', () => {
     if(title.value == '', author.value == '', pages.value == ''){
         inputModalContainer.style.display = 'none';
+        checkBox.checked = false;
     } else {
     createBook();
     render()
