@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book Library</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -34,19 +34,28 @@
                     <input type="text" id="title" placeholder="title">
                     <input type="text" id="author" placeholder="author">
                     <input type="text" id="pages" placeholder="pages">
+
+                    <div class="check_box_container">
+                        <label for="Read?" id="read">Read:</label>
+                        <input type="checkbox" id="checkbox">
+                    </div>
                 </div>
 
                 <div class="button_container">
                     <button id="submit">Submit</button>
                     <button id="shut">close</button> 
                 </div>
-        
-        
         </div>
 
         <!-- Test Book -->
-<!-- 
-        <div class="books_container">
+
+        <!-- <div class="books_container">
+            <div class="read_container">
+                <label for="display_read?" id="display_read?">Read:</label>
+                <input type="checkbox" id="display_checkbox">
+            </div>
+
+
             <div id="books">hello<br>harry potter<br>Evan Gatte</div>
 
             <div class="remove_button_container">
