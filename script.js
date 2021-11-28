@@ -4,7 +4,7 @@ const closeBtn = document.querySelector('#shut');
 const inputModalContainer = document.querySelector('.input_modal_container');
 const inputModal = document.querySelector('.input_modal');
 const bookContainer = document.querySelector('.books_container');
-const bottomContainer = document.querySelector('.bottom_container');
+const bottomContainer = document.querySelector('.very_bottom_container');
 const removeBtn = document.querySelector('.remove');
 const title = document.getElementById('title');
 const author = document.getElementById('author');
@@ -30,6 +30,8 @@ submitBtn.addEventListener('click', () => {
     render()
    }  
 })
+
+
 
 
 
@@ -68,6 +70,8 @@ function createBook() {
 
 
 
+
+
     let insertBtn = document.createElement('button');
     let text = document.createTextNode('Remove');
     insertBtn.appendChild(text);
@@ -79,6 +83,8 @@ function createBook() {
     insertBtn.addEventListener('click', (e) => {
         e.target.parentNode.remove();
     })
+
+
 }
 
 //clears placeholders 

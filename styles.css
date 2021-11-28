@@ -69,9 +69,7 @@ button:hover {
     flex-direction: column;
     display: none;
     z-index: 1;
-    position: absolute;
-    bottom: auto;
-    left: 32%;
+    position: fixed; 
     border: solid;
     border-radius: 10px;
 }
@@ -131,14 +129,23 @@ input {
 
 .bottom_container {
     height: 700px;
+    width: auto;
     display: flex;
+    justify-content: center;
     gap: 5px;
+}
+
+.very_bottom_container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+
 }
 
 
 .books_container {
     background: #66FCF1;
-    height: 200px;
+    height: 210px;
     width: 200px;
     display: flex;
     flex-direction: column;
@@ -146,7 +153,6 @@ input {
     text-align: center;
     padding-top: 15px;
     gap: 20px;
-    position: relative;
     border: solid;
     border-radius: 10px;
 }
@@ -190,10 +196,9 @@ input {
     width: 150px;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
     bottom: 0;
     left: 20px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 }
 
 
